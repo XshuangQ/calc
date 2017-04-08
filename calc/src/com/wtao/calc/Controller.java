@@ -39,25 +39,21 @@ public class Controller implements ActionListener {
 		System.out.println(command);
 
 		switch (command) {
-		case "+":
-		case "-":
-		case "*":
-		case "/":
 		case "=":
-			calc.push(input.toString());
-			input.delete(0, input.length());
-			calc.push(command);
+			
+			input.setLength(0);
+			//计算然后显示结果
+			calc.todo(input.toString());
 			break;
 
 		case "C":
 			calc.clear();
+			input.setLength(0);
 			break;
-
-		// case "=":
-		// break;
-
+			
 		default:
 			input.append(command);
+			calc.setInput(input.toString());
 		}
 
 	}

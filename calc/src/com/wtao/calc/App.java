@@ -4,7 +4,7 @@ public class App {
 
 	public static void main(String[] args) {
 
-		// 不改变程序的功能，调整代码结构【重构】
+		// 不改变程序的功能，只调整结构【重构】
 		// 模型
 		CalcModel model = new CalcModel();
 

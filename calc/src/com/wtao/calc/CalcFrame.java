@@ -55,7 +55,7 @@ public class CalcFrame extends JFrame implements Observer, CalcCallback {
 	}
 
 	private void initUi() {
-		setTitle("计算器 - xx 作品");
+		setTitle("计算器");
 		setSize(320, 480);
 		setResizable(false);
 		setLocationRelativeTo(null);
